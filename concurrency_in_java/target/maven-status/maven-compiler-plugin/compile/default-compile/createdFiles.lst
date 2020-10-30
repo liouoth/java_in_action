@@ -1,5 +1,6 @@
 com\leo\thread\同步异步\Async.class
 com\leo\thread\同步异步\Sync.class
+com\leo\thread\线程\generated\Ext_Test_test_contains_jmhTest.class
 com\leo\thread\线程\generated\Ext_Test_test_indexof_jmhTest.class
 com\leo\thread\线程\BenchmarkTest.class
 com\leo\thread\线程\generated\Ext_Test_test_regFind_jmhTest.class

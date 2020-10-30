@@ -3,6 +3,11 @@ dontinline,*.*_avgt_jmhStub
 dontinline,*.*_sample_jmhStub
 dontinline,*.*_ss_jmhStub
 dontinline,*.*_thrpt_jmhStub
+inline,com/leo/thread/线程/Ext_Test.test_contains
 inline,com/leo/thread/线程/Ext_Test.test_indexof
 inline,com/leo/thread/线程/Ext_Test.test_regFind
 inline,com/leo/thread/线程/Ext_Test.test_regMatch
+inline,com/leo/thread/线程/Test.test_contains
+inline,com/leo/thread/线程/Test.test_indexof
+inline,com/leo/thread/线程/Test.test_regFind
+inline,com/leo/thread/线程/Test.test_regMatch
