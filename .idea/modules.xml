@@ -2,7 +2,8 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/java_in_action.iml" filepath="$PROJECT_DIR$/java_in_action.iml" />
+      <module fileurl="file://$PROJECT_DIR$/basic_in_action/basic_in_action.iml" filepath="$PROJECT_DIR$/basic_in_action/basic_in_action.iml" />
+      <module fileurl="file://$PROJECT_DIR$/jvm_in_action/jvm_in_action.iml" filepath="$PROJECT_DIR$/jvm_in_action/jvm_in_action.iml" />
     </modules>
   </component>
 </project>

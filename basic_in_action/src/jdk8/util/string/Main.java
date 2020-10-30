@@ -1,9 +1,10 @@
-package jdk8.function;
+package jdk8.util.string;
 
 /**
- * {@link FunctionTest} Function接口使用测试
+ * {@link}
  */
 public class Main {
     public static void main(String[] args) {
+
     }
 }
