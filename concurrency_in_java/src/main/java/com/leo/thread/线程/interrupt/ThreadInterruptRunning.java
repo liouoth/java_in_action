@@ -8,7 +8,10 @@ import java.util.concurrent.TimeUnit;
 @Slf4j
 public class ThreadInterruptRunning {
     public static void main(String[] args) throws InterruptedException {
-        test1();
+//        test1();
+        new Thread(()->{
+            Thread.currentThread().interrupt();
+        }).start();
     }
 
     private static void test1() throws InterruptedException {
