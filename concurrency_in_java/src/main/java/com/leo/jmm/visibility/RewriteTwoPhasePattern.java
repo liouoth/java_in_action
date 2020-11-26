@@ -25,9 +25,16 @@ public class RewriteTwoPhasePattern {
 @Slf4j
 class Monitor{
     private Thread monitor;
+    private boolean starting;
     private volatile boolean stop = false; //true 被打断 false 未被打断
 
     public void start(){
+        synchronized (this){
+            if (starting){
+                return;
+            }
+            starting = true;
+        }
         monitor = new Thread(()->{
             Thread current = Thread.currentThread();
             while (!stop){  //直接将线程是否被打断的标志外置

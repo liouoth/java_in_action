@@ -1,0 +1,42 @@
+// Decompiled by Jad v1.5.8g. Copyright 2001 Pavel Kouznetsov.
+// Jad home page: http://www.kpdus.com/jad.html
+// Decompiler options: packimports(3) 
+// Source File Name:   DrinkEnum.java
+
+package jdk8.lang._enum;
+
+
+public final class DrinkEnum extends Enum
+{
+
+    public static DrinkEnum[] values()
+    {
+        return (DrinkEnum[])$VALUES.clone();
+    }
+
+    public static DrinkEnum valueOf(String name)
+    {
+        return (DrinkEnum)Enum.valueOf(jdk8/lang/_enum/DrinkEnum, name);
+    }
+
+    private DrinkEnum(String s, int i, float price)
+    {
+        super(s, i);
+    }
+
+    public static final DrinkEnum COLA;
+    public static final DrinkEnum SPRITE;
+    public static final DrinkEnum SEVEN_UP;
+    private float price;
+    private static final DrinkEnum $VALUES[];
+
+    static 
+    {
+        COLA = new DrinkEnum("COLA", 0, 3F);
+        SPRITE = new DrinkEnum("SPRITE", 1, 4F);
+        SEVEN_UP = new DrinkEnum("SEVEN_UP", 2, 4F);
+        $VALUES = (new DrinkEnum[] {
+            COLA, SPRITE, SEVEN_UP
+        });
+    }
+}
