@@ -5,5 +5,4 @@ package jdk8.stream;
  * referencePipeline中有三个内部类
  */
 public class ReferencePipeLineMain {
-
 }

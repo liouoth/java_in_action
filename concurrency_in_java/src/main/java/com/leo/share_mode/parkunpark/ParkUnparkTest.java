@@ -43,14 +43,39 @@ public class ParkUnparkTest {
         LockSupport.unpark(thread);
     }
 
-    public static void parkTest1() throws InterruptedException {
-        Thread t1 = new Thread();
-        LockSupport.park();
 
+    //测试park时能够被打断
+    public static void parkTest1() throws InterruptedException {
+        Thread t1 = new Thread(() -> {
+            log.debug("开始！！！");
+            LockSupport.park(); //park当前线程
+            log.debug("结束！！！");
+
+        });
+        t1.start();
+        Thread.sleep(2000);
+        log.debug("打断！！！");
+        t1.interrupt();
+        log.debug("是否被打断："+t1.isInterrupted());
+    }
+
+    //打断之后还能够park住？
+    public static void parkTest2() throws InterruptedException {
+        Thread t1 = new Thread(() -> {
+            log.debug("开始！！！");
+            LockSupport.park(); //park当前线程
+            log.debug("结束！！！");
+        });
+        t1.start();
+        Thread.sleep(2000);
+        log.debug("打断！！！");
+        t1.interrupt();
+        t1.start();
+        t1.interrupt();
     }
 
 
     public static void main(String[] args) throws InterruptedException {
-        unparkFirst();
+        parkTest2();
     }
 }
